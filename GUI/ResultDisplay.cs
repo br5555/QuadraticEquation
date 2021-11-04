@@ -46,5 +46,10 @@ namespace Vsite.Csharp.KvadartnaJednadzba.Gui
         {
             FillResults();
         }
+
+        private void numericUpDown_ValueChanged(object sender, EventArgs e)
+        {
+            FillResults();
+        }
     }
 }
