@@ -31,26 +31,32 @@ namespace Vsite.Csharp.KvadartnaJednadzba.Gui
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownA = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownB = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownC = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
+            this.Discriminant = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Roots = new System.Windows.Forms.GroupBox();
+            this.TextBoxRoots1 = new System.Windows.Forms.TextBox();
+            this.TextBoxRoots2 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownC)).BeginInit();
+            this.Roots.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.numericUpDown2);
+            this.groupBox1.Controls.Add(this.numericUpDownB);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.numericUpDown1);
+            this.groupBox1.Controls.Add(this.numericUpDownA);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(33, 31);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(225, 130);
+            this.groupBox1.Size = new System.Drawing.Size(236, 158);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Coeficients";
@@ -66,19 +72,43 @@ namespace Vsite.Csharp.KvadartnaJednadzba.Gui
             this.label1.Text = "&a:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // numericUpDown1
+            // numericUpDownA
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(73, 22);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 22);
-            this.numericUpDown1.TabIndex = 1;
+            this.numericUpDownA.DecimalPlaces = 1;
+            this.numericUpDownA.Location = new System.Drawing.Point(73, 22);
+            this.numericUpDownA.Maximum = new decimal(new int[] {
+            32000,
+            0,
+            0,
+            0});
+            this.numericUpDownA.Minimum = new decimal(new int[] {
+            32000,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownA.Name = "numericUpDownA";
+            this.numericUpDownA.Size = new System.Drawing.Size(150, 22);
+            this.numericUpDownA.TabIndex = 1;
+            this.numericUpDownA.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // numericUpDown2
+            // numericUpDownB
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(72, 53);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(120, 22);
-            this.numericUpDown2.TabIndex = 3;
+            this.numericUpDownB.DecimalPlaces = 1;
+            this.numericUpDownB.Location = new System.Drawing.Point(72, 53);
+            this.numericUpDownB.Maximum = new decimal(new int[] {
+            32000,
+            0,
+            0,
+            0});
+            this.numericUpDownB.Minimum = new decimal(new int[] {
+            32000,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownB.Name = "numericUpDownB";
+            this.numericUpDownB.Size = new System.Drawing.Size(151, 22);
+            this.numericUpDownB.TabIndex = 3;
+            this.numericUpDownB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label2
             // 
@@ -89,12 +119,25 @@ namespace Vsite.Csharp.KvadartnaJednadzba.Gui
             this.label2.TabIndex = 2;
             this.label2.Text = "&b:";
             // 
-            // numericUpDown3
+            // numericUpDownC
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(104, 118);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(120, 22);
-            this.numericUpDown3.TabIndex = 3;
+            this.numericUpDownC.DecimalPlaces = 1;
+            this.numericUpDownC.Location = new System.Drawing.Point(104, 118);
+            this.numericUpDownC.Maximum = new decimal(new int[] {
+            32000,
+            0,
+            0,
+            0});
+            this.numericUpDownC.Minimum = new decimal(new int[] {
+            32000,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownC.Name = "numericUpDownC";
+            this.numericUpDownC.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.numericUpDownC.Size = new System.Drawing.Size(152, 22);
+            this.numericUpDownC.TabIndex = 3;
+            this.numericUpDownC.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label3
             // 
@@ -105,20 +148,70 @@ namespace Vsite.Csharp.KvadartnaJednadzba.Gui
             this.label3.TabIndex = 2;
             this.label3.Text = "&c:";
             // 
+            // Discriminant
+            // 
+            this.Discriminant.Location = new System.Drawing.Point(141, 217);
+            this.Discriminant.Name = "Discriminant";
+            this.Discriminant.ReadOnly = true;
+            this.Discriminant.Size = new System.Drawing.Size(246, 22);
+            this.Discriminant.TabIndex = 5;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.Location = new System.Drawing.Point(33, 221);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(102, 18);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "&Discriminant";
+            // 
+            // Roots
+            // 
+            this.Roots.Controls.Add(this.TextBoxRoots2);
+            this.Roots.Controls.Add(this.TextBoxRoots1);
+            this.Roots.Location = new System.Drawing.Point(33, 275);
+            this.Roots.Name = "Roots";
+            this.Roots.Size = new System.Drawing.Size(354, 167);
+            this.Roots.TabIndex = 7;
+            this.Roots.TabStop = false;
+            this.Roots.Text = "&Roots";
+            // 
+            // TextBoxRoots1
+            // 
+            this.TextBoxRoots1.Location = new System.Drawing.Point(42, 39);
+            this.TextBoxRoots1.Name = "TextBoxRoots1";
+            this.TextBoxRoots1.ReadOnly = true;
+            this.TextBoxRoots1.Size = new System.Drawing.Size(246, 22);
+            this.TextBoxRoots1.TabIndex = 6;
+            // 
+            // TextBoxRoots2
+            // 
+            this.TextBoxRoots2.Location = new System.Drawing.Point(42, 91);
+            this.TextBoxRoots2.Name = "TextBoxRoots2";
+            this.TextBoxRoots2.ReadOnly = true;
+            this.TextBoxRoots2.Size = new System.Drawing.Size(246, 22);
+            this.TextBoxRoots2.TabIndex = 7;
+            // 
             // ResultDisplay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.numericUpDown3);
+            this.Controls.Add(this.Roots);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.Discriminant);
+            this.Controls.Add(this.numericUpDownC);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox1);
             this.Name = "ResultDisplay";
             this.Size = new System.Drawing.Size(757, 489);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownC)).EndInit();
+            this.Roots.ResumeLayout(false);
+            this.Roots.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -128,10 +221,15 @@ namespace Vsite.Csharp.KvadartnaJednadzba.Gui
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown numericUpDownB;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.NumericUpDown numericUpDownA;
+        private System.Windows.Forms.NumericUpDown numericUpDownC;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox Discriminant;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.GroupBox Roots;
+        private System.Windows.Forms.TextBox TextBoxRoots2;
+        private System.Windows.Forms.TextBox TextBoxRoots1;
     }
 }
