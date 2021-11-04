@@ -150,10 +150,10 @@ namespace Vsite.Csharp.KvadartnaJednadzba.Gui
             // 
             // Discriminant
             // 
-            this.Discriminant.Location = new System.Drawing.Point(141, 217);
+            this.Discriminant.Location = new System.Drawing.Point(193, 221);
             this.Discriminant.Name = "Discriminant";
             this.Discriminant.ReadOnly = true;
-            this.Discriminant.Size = new System.Drawing.Size(246, 22);
+            this.Discriminant.Size = new System.Drawing.Size(231, 22);
             this.Discriminant.TabIndex = 5;
             // 
             // label4

@@ -29,13 +29,31 @@ namespace Vsite.Csharp.KvadartnaJednadzba.Gui
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.resultDisplay1 = new Vsite.Csharp.KvadartnaJednadzba.Gui.ResultDisplay();
+            this.SuspendLayout();
+            // 
+            // resultDisplay1
+            // 
+            this.resultDisplay1.Location = new System.Drawing.Point(21, 12);
+            this.resultDisplay1.Name = "resultDisplay1";
+            this.resultDisplay1.Size = new System.Drawing.Size(784, 489);
+            this.resultDisplay1.TabIndex = 0;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(832, 476);
+            this.Controls.Add(this.resultDisplay1);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private ResultDisplay resultDisplay1;
     }
 }
 
