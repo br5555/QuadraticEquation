@@ -88,8 +88,17 @@ namespace QuadraticEquation
 
         public override string ToString()
         {
-            var oper = Im < 0 ? "" : "+";
-            return $"{Re} {oper} {Im}";
+            if (Im == 0)
+            {
+                return Re.ToString();
+            }
+
+            if (Re == 0)
+            {
+                return Im + "j";
+            }
+            var oper = Im < 0 ? "-" : "+";
+            return $"{Re} {oper} {Math.Abs(Im)}j";
         }
     }
 }

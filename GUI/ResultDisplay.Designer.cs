@@ -41,6 +41,7 @@ namespace Vsite.Csharp.KvadartnaJednadzba.Gui
             this.Roots = new System.Windows.Forms.GroupBox();
             this.TextBoxRoots1 = new System.Windows.Forms.TextBox();
             this.TextBoxRoots2 = new System.Windows.Forms.TextBox();
+            this.Evaluate = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownB)).BeginInit();
@@ -193,10 +194,21 @@ namespace Vsite.Csharp.KvadartnaJednadzba.Gui
             this.TextBoxRoots2.Size = new System.Drawing.Size(246, 22);
             this.TextBoxRoots2.TabIndex = 7;
             // 
+            // Evaluate
+            // 
+            this.Evaluate.Location = new System.Drawing.Point(291, 156);
+            this.Evaluate.Name = "Evaluate";
+            this.Evaluate.Size = new System.Drawing.Size(133, 32);
+            this.Evaluate.TabIndex = 8;
+            this.Evaluate.Text = "&Evaluate";
+            this.Evaluate.UseVisualStyleBackColor = true;
+            this.Evaluate.Click += new System.EventHandler(this.EvaluateButton_Click);
+            // 
             // ResultDisplay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.Evaluate);
             this.Controls.Add(this.Roots);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.Discriminant);
@@ -231,5 +243,6 @@ namespace Vsite.Csharp.KvadartnaJednadzba.Gui
         private System.Windows.Forms.GroupBox Roots;
         private System.Windows.Forms.TextBox TextBoxRoots2;
         private System.Windows.Forms.TextBox TextBoxRoots1;
+        private System.Windows.Forms.Button Evaluate;
     }
 }

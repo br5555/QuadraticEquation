@@ -46,7 +46,7 @@ namespace Vsite.Csharp.KvadartnaJednadzba.Gui
             this.ClientSize = new System.Drawing.Size(832, 476);
             this.Controls.Add(this.resultDisplay1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Quadratic Equation";
             this.ResumeLayout(false);
 
         }

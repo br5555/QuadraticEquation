@@ -89,5 +89,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QuadraticEquation\QuadraticEquation.csproj">
+      <Project>{84E0695C-2933-49F6-AAE7-1DE308740036}</Project>
+      <Name>QuadraticEquation</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

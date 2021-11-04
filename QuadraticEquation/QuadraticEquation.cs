@@ -83,6 +83,11 @@ namespace QuadraticEquation
 
                 }
 
+                if (A == 0)
+                {
+                    return new Complex[] { new Complex(-C / B), new Complex(-C / B) };
+                }
+
                 return new Complex[]
                     { (-1 * B + Math.Sqrt(Discriminant)) / (2 * A), (-1 * B - Math.Sqrt(Discriminant)) / (2 * A) };
             }
