@@ -95,6 +95,11 @@ namespace QuadraticEquation
                 if (Discriminant < 0)
                     throw new NotRealRootsException("Discriminant is less then zero");
 
+                if (A == 0)
+                {
+                    return new double[] { -C / B, -C / B };
+                }
+
                 return new double[]
                     { (-1 * B + Math.Sqrt(Discriminant)) / (2 * A), (-1 * B - Math.Sqrt(Discriminant)) / (2 * A) };
             }
