@@ -34,6 +34,7 @@ namespace Vsite.Csharp.KvadartnaJednadzba.Gui
         {
             DrawCoordinateSystem(e.Graphics);
             DrawFunction(e.Graphics);
+            MarkAxes(e.Graphics, Pens.Black);
             base.OnPaint(e);
         }
 
