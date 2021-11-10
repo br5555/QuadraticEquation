@@ -29,17 +29,10 @@ namespace Vsite.Csharp.KvadartnaJednadzba.Gui
         /// </summary>
         private void InitializeComponent()
         {
-            this.resultDisplay1 = new Vsite.Csharp.KvadartnaJednadzba.Gui.ResultDisplay();
             this.functionPanel1 = new Vsite.Csharp.KvadartnaJednadzba.Gui.FunctionPanel();
+            this.resultDisplay1 = new Vsite.Csharp.KvadartnaJednadzba.Gui.ResultDisplay();
             ((System.ComponentModel.ISupportInitialize)(this.functionPanel1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // resultDisplay1
-            // 
-            this.resultDisplay1.Location = new System.Drawing.Point(21, 12);
-            this.resultDisplay1.Name = "resultDisplay1";
-            this.resultDisplay1.Size = new System.Drawing.Size(437, 489);
-            this.resultDisplay1.TabIndex = 0;
             // 
             // functionPanel1
             // 
@@ -50,6 +43,13 @@ namespace Vsite.Csharp.KvadartnaJednadzba.Gui
             this.functionPanel1.Size = new System.Drawing.Size(517, 520);
             this.functionPanel1.TabIndex = 1;
             this.functionPanel1.TabStop = false;
+            // 
+            // resultDisplay1
+            // 
+            this.resultDisplay1.Location = new System.Drawing.Point(21, 12);
+            this.resultDisplay1.Name = "resultDisplay1";
+            this.resultDisplay1.Size = new System.Drawing.Size(437, 489);
+            this.resultDisplay1.TabIndex = 0;
             // 
             // Form1
             // 

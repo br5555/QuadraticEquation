@@ -32,9 +32,9 @@ namespace Vsite.Csharp.KvadartnaJednadzba.Gui
 
         protected override void OnPaint(PaintEventArgs e)
         {
-            base.OnPaint(e);
             DrawCoordinateSystem(e.Graphics);
             DrawFunction(e.Graphics);
+            base.OnPaint(e);
         }
 
         private void DrawFunction(Graphics graphics)

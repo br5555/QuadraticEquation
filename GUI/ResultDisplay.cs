@@ -13,6 +13,7 @@ namespace Vsite.Csharp.KvadartnaJednadzba.Gui
 {
     public partial class ResultDisplay : UserControl
     {
+        public Action<int> MyFunction;
         private QuadraticEquation.QuadraticEquation quadraticEquation;
         public ResultDisplay()
         {
@@ -22,11 +23,16 @@ namespace Vsite.Csharp.KvadartnaJednadzba.Gui
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
-              }
+        }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        public double CalculateY(double x)
+        {
+            return this.quadraticEquation.Y(x);
         }
 
         private void FillResults()
@@ -50,6 +56,7 @@ namespace Vsite.Csharp.KvadartnaJednadzba.Gui
         private void numericUpDown_ValueChanged(object sender, EventArgs e)
         {
             FillResults();
+            MyFunction(0);
         }
     }
 }
