@@ -13,7 +13,7 @@ namespace Vsite.Csharp.KvadartnaJednadzba.Gui
 {
     public partial class ResultDisplay : UserControl
     {
-        public Action<int> MyFunction;
+        public event EventHandler coeficientsChanged;
         private QuadraticEquation.QuadraticEquation quadraticEquation;
         private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         public ResultDisplay()
@@ -64,7 +64,7 @@ namespace Vsite.Csharp.KvadartnaJednadzba.Gui
         private void numericUpDown_ValueChanged(object sender, EventArgs e)
         {
             FillResults();
-            MyFunction(0);
+            coeficientsChanged?.Invoke(this, EventArgs.Empty);
         }
     }
 }

@@ -61,7 +61,7 @@ namespace DrawingQuadraticEquation {
 
         private void DrawCoordinateSystem(Graphics graphics) {
             using (Pen pen = new Pen(Color.Gray)) {
-                //MarkAxes(graphics, pen);
+                MarkAxes(graphics, pen);
                 graphics.DrawLine(pen, 0, ClientRectangle.Height / 2, 
 					ClientRectangle.Width, ClientRectangle.Height / 2);
                 graphics.DrawLine(pen, ClientRectangle.Width / 2, 0, 

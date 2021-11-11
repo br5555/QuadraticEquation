@@ -17,10 +17,10 @@ namespace Vsite.Csharp.KvadartnaJednadzba.Gui
         {
             InitializeComponent();
             this.functionPanel1.Function = this.resultDisplay1.CalculateY;
-            this.resultDisplay1.MyFunction = this.InvalidateAll;
+            this.resultDisplay1.coeficientsChanged += this.InvalidateAll;
         }
 
-        private void InvalidateAll(int x)
+        private void InvalidateAll(object sender, EventArgs e)
         {
             this.functionPanel1.Invalidate();
         }
